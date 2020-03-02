@@ -1,0 +1,23 @@
+$grey-color:#e5e5e5;
+$bg-color: #ffffff;
+$footer-color: #464646;
+$main-color: #f7e296;
+
+body{
+  margin: auto;
+  width: 1200px;
+}
+
+.header {
+  color: red;
+  background: $main-color;
+}
+
+.header-lable {
+  top: -15px;
+}
+
+.footer {
+  color: blueviolet;
+  background: $footer-color;
+}
