@@ -1,18 +1,74 @@
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("../fonts/gilroyextrabold.woff") format("woff"), url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gilroylight";
+  src: url("../fonts/gilroylight.woff") format("woff"), url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "opensanslight";
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-  margin: auto;
-  width: 1200px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .header {
+  width: 1040px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0 60px;
   color: red;
   background: #f7e296;
 }
 
 .header-lable {
+  display: inline;
+  font: 36px/21px gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
   top: -15px;
 }
 
+.menu {
+  margin: auto;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer {
+  padding: 68px 0 78px 0;
+  width: 100%;
   color: blueviolet;
   background: #464646;
+}
+
+.footer-lable {
+  color: #f7e296;
+  font: 36px/21px gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  margin: auto;
+  width: 1160px;
 }

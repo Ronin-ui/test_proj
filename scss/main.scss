@@ -1,23 +1,92 @@
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold.woff') format('woff'), url('../fonts/gilroyextrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight.woff') format('woff'), url('../fonts/gilroylight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensanslight';
+    src: url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//color
 $grey-color:#e5e5e5;
 $bg-color: #ffffff;
 $footer-color: #464646;
 $main-color: #f7e296;
 
-body{
-  margin: auto;
-  width: 1200px;
+//fonts
+$font_gilroy-bold: gilroyextrabold, Arial, sans-serif;
+$font_gilroy-light: gilroylight, Arial, sans-serif;
+$font_opensans: opensans, Arial, sans-serif;
+$font_opensans-light: opensanslight, Arial, sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .header {
+  width: 1040px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0 60px;
   color: red;
   background: $main-color;
 }
 
 .header-lable {
+  display: inline;
+  font: 36px/21px $font_gilroy-bold;
+  text-transform: uppercase;
   top: -15px;
 }
 
+.menu {
+  margin: auto;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+
+}
+
 .footer {
+  padding: 68px 0 78px 0;
+  width: 100%;
   color: blueviolet;
   background: $footer-color;
+}
+
+.footer-lable {
+  color: $main-color;
+  font: 36px/21px $font_gilroy-bold;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  margin: auto;
+  width: 1160px;
 }
