@@ -6,40 +6,213 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
     <header class="header">
         <h1 class="header-lable">Device</h1>
-        <form>
-            <input type="submit" value="Найти">
-            <input type="search" placeholder="Поиск по сайту">
-            <button>Войти</button>
-            <button>Сравнить</button>
-            <button>Корзина</button>
+        <form class="header-form">
+            <div class="header-block">
+                <input class="header-submit" type="submit" value="Найти">
+                <input class="header-search" type="search" placeholder="Поиск по сайту">
+                <select class="header-li">
+                    Каталог товаров
+                </select>
+            </div>
+
+            <div class="header-block header-block__flex">
+                <div class="header-block1">
+                    <button class="header-button">
+                        <img class="header-button_image" src="images/user_black.png" alt="альтернативный текст">
+                        Войти
+                    </button>
+                    <nav class="header-nav header-nav__space-between">
+                        <div class="header-li">Доставка</div>
+                        <div class="header-li">Гарантия</div>
+                    </nav>
+                </div>
+                <div class="header-block2">
+                    <button class="header-button">
+                        <img class="header-button_image" src="images/compare_black.png" alt="альтернативный текст">
+                        Сравнить
+                    </button>
+                    <button class="header-button">
+                        <img class="header-button_image" src="images/cart_black.png" alt="альтернативный текст">
+                        Корзина
+                    </button>
+                    <nav class="header-nav header-nav__center">
+                        <div class="header-li">Контакты</div>
+                    </nav>
+                </div>
+            </div>
         </form>
-        <nav>
-            <ul>
-                <li>Доставка</li>
-                <li>Гарантия</li>
-                <li>Контакты</li>
+    </header>
+
+    <nav class="main-nav">
+        <div class="main-block">
+            <img src="images/slider-1.png" alt="альтернативный текст">
+        </div>
+        <div class="main-block2">
+            <h2 class="main-h2">Делай селфи,<span class="main-number">01</span><br> как Бен Стиллер!</h2>
+            <p class="main-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
+               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <button class="main-button">Подробнее</button>
+            <button type="radio>"></button>
+            <button type="radio>"></button>
+            <button type="radio>"></button>
+        </div>
+
+    </nav>
+
+    <nav>
+
+    </nav>
+
+    <nav class="menu">
+        <div class="menu-block">
+            <div class="menu-block-item">
+                <div class="menu-item">
+                    <img src="images/popular-1.png" alt="альтернативный текст">
+                </div>
+            </div>
+            <div class="menu-lable">
+                <p>Виртуальная <br>реальность</p>
+            </div>
+        </div>
+        <div class="menu-block">
+            <div class="menu-block-item">
+                <div class="menu-item menu-item_done">
+                    <img src="images/popular-2.png" alt="альтернативный текст">
+                </div>
+            </div>
+            <div class="menu-lable">
+                <p>Моноподы <br>для селфи</p>
+            </div>
+        </div>
+        <div class="menu-block">
+            <div class="menu-block-item">
+                <div class="menu-item">
+                    <img src="images/popular-3.png" alt="альтернативный текст">
+                </div>
+            </div>
+            <div class="menu-lable">
+                <p>Экшн-камеры</p>
+            </div>
+        </div>
+        <div class="menu-block">
+            <div class="menu-block-item">
+                <div class="menu-item">
+                    <img src="images/popular-4.png" alt="альтернативный текст">
+                </div>
+            </div>
+            <div class="menu-lable">
+                <p>Фитнес-браслеты</p>
+            </div>
+        </div>
+        <div class="menu-block">
+            <div class="menu-block-item">
+                <div class="menu-item">
+                    <img src="images/popular-5.png" alt="альтернативный текст">
+                </div>
+            </div>
+            <div class="menu-lable">
+                <p>Умные часы</p>
+            </div>
+        </div>
+        <div class="menu-block">
+            <div class="menu-block-item">
+                <div class="menu-item">
+                    <img src="images/poppular-6.png" alt="альтернативный текст">
+                </div>
+            </div>
+            <div class="menu-lable">
+                <p>Квадрокоптеры</p>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="grey_block">
+        <div class="grey_block-tabs">
+            <input class="grey_block-input" type="radio" name="odin" checked="checked" id="vkl1"/>
+            <label class="grey_block-lable" for="vkl1">Доставка</label>
+
+            <input class="grey_block-input" type="radio" name="odin" id="vkl2"/>
+            <label class="grey_block-lable" for="vkl2">Гарантия</label>
+
+            <input class="grey_block-input" type="radio" name="odin" id="vkl3"/>
+            <label class="grey_block-lable" for="vkl3">Кредит</label>
+          <div class="grey_block-tab">
+              <h2 class="grey_block-h2">Доставка</h2>
+              <p class="grey_block-text">Мы с удовольствием доставим ваш товар прямо к вашему
+                  подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж</p>
+          </div>
+          <div class="grey_block-tab">
+              <h2 class="grey_block-h2">Гарантия</h2>
+              <p class="grey_block-text">Если из-за возгорания купленного у нас товара у вас
+                  сгорит дом - не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же</p>
+          </div>
+          <div class="grey_block-tab">
+              <h2 class="grey_block-h2">Кредит</h2>
+              <p class="grey_block-text">Залезть в долговую яму стало проще! Кредитные
+                  консультанты подберут для вас наиболее выгодные
+                  условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </div>
+    </nav>
+
+    <nav class="logo-menu">
+        <img class="logo-image1" src="images/logo-1.jpg" alt="альтернативный текст">
+        <img class="logo-image2" src="images/logo-3.jpg" alt="альтернативный текст">
+        <img class="logo-image3" src="images/logo-2.jpg" alt="альтернативный текст">
+        <img class="logo-image4" src="images/logo-4.jpg" alt="альтернативный текст">
+    </nav>
+
+    <footer class="about_us">
+        <nav class="about_us-info">
+            <h2 class="about_us-lable">О нас</h2>
+            <p class="about_us-text">Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из нас</p>
+            <p class="about_us-text about_us-text-mb">Мы можем доставить ваш товар в самые отдаленные точки <br>России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="about_us-ul">
+                <li class="about_us-li">Деловые Линии</li>
+                <li class="about_us-li">Автотрейдинг</li>
+                <li class="about_us-li">ЖелДорЭкспедиция</li>
             </ul>
         </nav>
-    </header>
-    <nav class="menu row">
-        <div class="menu-item">a</div>
-        <div class="menu-item">a</div>
-        <div class="menu-item">a</div>
-        <div class="menu-item">a</div>
-        <div class="menu-item">a</div>
-        <div class="menu-item">a</div>
-    </nav>
+        <nav class="about_us-contact">
+            <h2 class="about_us-lable">Контакты</h2>
+            <p class="about_us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>проверить работоспособность покупки. Всякое бывает.</p>
+
+        </nav>
+
+    </footer>
+
     <footer class="footer">
         <div class="footer-content">
-            <h1 class="footer-lable">Device</h1>
-            <nav>
-            <button>Войти</button>
-            <button>Сравнить</button>
-            <button>Корзина</button>
-            </nav>
+            <div class="footer-line">
+                <h1 class="footer-lable">Device</h1>
+                <form>
+                    <button class="footer-button">
+                        <img class="footer-button_image" src="images/user.png" alt="альтернативный текст">
+                        Войти
+                    </button>
+                    <button class="footer-button">
+                        <img class="footer-button_image" src="images/compare.png" alt="альтернативный текст">
+                        Сравнить
+                    </button>
+                    <button class="footer-button">
+                        <img class="footer-button_image" src="images/cart.png" alt="альтернативный текст">
+                        Корзина
+                    </button>
+                </form>
+            </div>
+            <div class="footer-line">
+                <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+
+                <tel class="footer-telephone">Тел.: +7 (495) 495-95-95</tel>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
