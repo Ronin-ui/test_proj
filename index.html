@@ -8,21 +8,21 @@
 <body>
 
     <header class="header">
-        <h1 class="header-lable">Device</h1>
+        <h1 class="header-lable"><a>Device</a></h1>
         <form class="header-form">
             <div class="header-block">
-                <input class="header-submit" type="submit" value="Найти">
+                <button class="header-submit" type="submit"><img src="images/user_black.png" alt="альтернативный текст"></button>
                 <input class="header-search" type="search" placeholder="Поиск по сайту">
-                <select class="header-li">
-                    Каталог товаров
+                <select class="header-select">
+                    <option class="header-option">Каталог товаров</option>
+                    <option class="header-option">Каталог товаров</option>
                 </select>
             </div>
 
             <div class="header-block header-block__flex">
                 <div class="header-block1">
                     <button class="header-button">
-                        <img class="header-button_image" src="images/user_black.png" alt="альтернативный текст">
-                        Войти
+                        <span><img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти</span>
                     </button>
                     <nav class="header-nav header-nav__space-between">
                         <div class="header-li">Доставка</div>
@@ -31,14 +31,12 @@
                 </div>
                 <div class="header-block2">
                     <button class="header-button">
-                        <img class="header-button_image" src="images/compare_black.png" alt="альтернативный текст">
-                        Сравнить
+                        <span><img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить</span>
                     </button>
-                    <button class="header-button">
-                        <img class="header-button_image" src="images/cart_black.png" alt="альтернативный текст">
-                        Корзина
+                    <button class="header-button header-button_right">
+                        <span><img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина</span>
                     </button>
-                    <nav class="header-nav header-nav__center">
+                    <nav class="header-nav header-nav__end">
                         <div class="header-li">Контакты</div>
                     </nav>
                 </div>
@@ -46,21 +44,25 @@
         </form>
     </header>
 
-    <nav class="main-nav">
-        <div class="main-block">
-            <img src="images/slider-1.png" alt="альтернативный текст">
+    <nav class="main">
+        <div class="main-yellow_block">
         </div>
-        <div class="main-block2">
-            <h2 class="main-h2">Делай селфи,<span class="main-number">01</span><br> как Бен Стиллер!</h2>
-            <p class="main-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
-               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </p>
-            <button class="main-button">Подробнее</button>
-            <button type="radio>"></button>
-            <button type="radio>"></button>
-            <button type="radio>"></button>
+        <div class="main-nav">
+            <div class="main-block">
+                <img src="images/slider-1.png" alt="альтернативный текст">
+            </div>
+            <div class="main-block2">
+                <hr class="main-line_top" align="left" size="7" color="white" />
+                <h2 class="main-h2">Делай селфи,<span class="main-number">01</span><br> как Бен Стиллер!</h2>
+                <p class="main-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
+                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p>
+                <button class="main-button">Подробнее</button>
+                <input class="tab-radio" type="radio" name="tabs" id="id1"/>
+                <input class="tab-radio" type="radio" name="tabs" id="id2" checked/>
+                <input class="tab-radio" type="radio" name="tabs" id="id3"/>
+            </div>
         </div>
-
     </nav>
 
     <nav>
@@ -80,9 +82,9 @@
         </div>
         <div class="menu-block">
             <div class="menu-block-item">
-                <div class="menu-item menu-item_done">
+                <a class="menu-item menu-item_done" href="catalog.html">
                     <img src="images/popular-2.png" alt="альтернативный текст">
-                </div>
+                </a>
             </div>
             <div class="menu-lable">
                 <p>Моноподы <br>для селфи</p>
@@ -140,76 +142,100 @@
 
             <input class="grey_block-input" type="radio" name="odin" id="vkl3"/>
             <label class="grey_block-lable" for="vkl3">Кредит</label>
-          <div class="grey_block-tab">
-              <h2 class="grey_block-h2">Доставка</h2>
-              <p class="grey_block-text">Мы с удовольствием доставим ваш товар прямо к вашему
-                  подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж</p>
-          </div>
-          <div class="grey_block-tab">
-              <h2 class="grey_block-h2">Гарантия</h2>
-              <p class="grey_block-text">Если из-за возгорания купленного у нас товара у вас
-                  сгорит дом - не переживайте, мы выдадим вам новый.
-                  Товар, не дом, конечно же</p>
-          </div>
-          <div class="grey_block-tab">
-              <h2 class="grey_block-h2">Кредит</h2>
-              <p class="grey_block-text">Залезть в долговую яму стало проще! Кредитные
-                  консультанты подберут для вас наиболее выгодные
-                  условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </div>
+            <div class="grey_block-tab">
+                <div>
+                    <h2 class="grey_block-h2">Доставка</h2>
+                    <p class="grey_block-text">Мы с удовольствием доставим ваш товар прямо к вашему
+                        подъезду совершенно бесплатно! Ведь мы неплохо
+                        заработаем, поднимая его на ваш этаж</p>
+                </div>
+                <img src="images/delivery.png" alt="альтернативный текст">
+            </div>
+            <div class="grey_block-tab">
+                <div>
+                    <h2 class="grey_block-h2">Гарантия</h2>
+                    <p class="grey_block-text">Если из-за возгорания купленного у нас товара у вас
+                        сгорит дом - не переживайте, мы выдадим вам новый.
+                        Товар, не дом, конечно же</p>
+                </div>
+                <img src="images/delivery.png" alt="альтернативный текст">
+            </div>
+            <div class="grey_block-tab">
+                <div>
+                    <h2 class="grey_block-h2">Кредит</h2>
+                    <p class="grey_block-text">Залезть в долговую яму стало проще! Кредитные
+                        консультанты подберут для вас наиболее выгодные
+                        условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+                <img src="images/delivery.png" alt="альтернативный текст">
+            </div>
         </div>
     </nav>
 
     <nav class="logo-menu">
-        <img class="logo-image1" src="images/logo-1.jpg" alt="альтернативный текст">
-        <img class="logo-image2" src="images/logo-3.jpg" alt="альтернативный текст">
-        <img class="logo-image3" src="images/logo-2.jpg" alt="альтернативный текст">
-        <img class="logo-image4" src="images/logo-4.jpg" alt="альтернативный текст">
+        <a class="logo-dji"><img src="images/dji.png" alt="Dji logo"></a>
+        <a class="logo-sp_gadgets"><img src="images/sp_gadgets.png" alt="Sp Gadgets logo"></a>
+        <a class="logo-gopro"><img src="images/gopro.png" alt="GoPro logo"></a>
+        <a class="logo-vive"><img src="images/vive.png" alt="Vive logo"></a>
     </nav>
 
     <footer class="about_us">
         <nav class="about_us-info">
+            <hr class="about_us-line_top" align="left" size="7" color="black" />
             <h2 class="about_us-lable">О нас</h2>
             <p class="about_us-text">Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из нас</p>
             <p class="about_us-text about_us-text-mb">Мы можем доставить ваш товар в самые отдаленные точки <br>России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="about_us-ul">
-                <li class="about_us-li">Деловые Линии</li>
-                <li class="about_us-li">Автотрейдинг</li>
-                <li class="about_us-li">ЖелДорЭкспедиция</li>
+                <li class="about_us-li"><p class="about_us-li-name">Деловые Линии</p></li>
+                <li class="about_us-li"><p class="about_us-li-name">Автотрейдинг</p></li>
+                <li class="about_us-li"><p class="about_us-li-name">ЖелДорЭкспедиция</p></li>
             </ul>
+            <button>Подробнее о нас</button>
         </nav>
         <nav class="about_us-contact">
+            <hr class="about_us-line_top" align="left" size="7" color="black" />
             <h2 class="about_us-lable">Контакты</h2>
             <p class="about_us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>проверить работоспособность покупки. Всякое бывает.</p>
-
+            <iframe class="about_us-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11336.534602087972!2d36.23475434809734!3d49.98936297457882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1583415325241!5m2!1sru!2sua" width="560" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <button>Напишите нам</button>
         </nav>
 
     </footer>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-line">
-                <h1 class="footer-lable">Device</h1>
-                <form>
+            <div class="footer-block1">
+                <h1 class="footer-lable"><p>Device</p></h1>
+                <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+                <br><br><br><br>
+                <hr class="footer-line_bottom" align="left" size="7" color="$fl-color" />
+            </div>
+            <div class="footer-block2">
+                <nav class="footer-nav">
+                    <span class="footer-li">Доставка</span>
+                    <span class="footer-li">Гарантия</span>
+                    <span class="footer-li">Контакты</span>
+                </nav>
+                <nav class="footer-social">
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                </nav>
+            </div>
+            <div class="footer-block3">
+                <form class="footer-form">
                     <button class="footer-button">
-                        <img class="footer-button_image" src="images/user.png" alt="альтернативный текст">
-                        Войти
+                        <span><img src="images/user.png" alt="альтернативный текст">&emsp;Войти</span>
                     </button>
                     <button class="footer-button">
-                        <img class="footer-button_image" src="images/compare.png" alt="альтернативный текст">
-                        Сравнить
+                        <span><img src="images/compare.png" alt="альтернативный текст">&emsp;Сравнить</span>
                     </button>
                     <button class="footer-button">
-                        <img class="footer-button_image" src="images/cart.png" alt="альтернативный текст">
-                        Корзина
+                        <span><img src="images/cart.png" alt="альтернативный текст">&emsp;Корзина</span>
                     </button>
                 </form>
-            </div>
-            <div class="footer-line">
-                <address class="footer-address">г. Москва, ул. Строителей, 15</address>
-
-                <tel class="footer-telephone">Тел.: +7 (495) 495-95-95</tel>
+                <div  class="footer-telephone"><tel>Тел.: +7 (495) 495-95-95</tel></div>
+                <a class="footer-logo_html" href="https://htmlacademy.ru/"><img src="images/logo-html.png" alt="альтернативный текст"></a>
             </div>
         </div>
     </footer>

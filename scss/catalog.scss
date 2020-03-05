@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold.woff') format('woff'), url('../fonts/gilroyextrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight.woff') format('woff'), url('../fonts/gilroylight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensanslight';
+    src: url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//color
+$grey-color:#e5e5e5;
+$bg-color: #ffffff;
+$footer-color: #464646;
+$main-color: #f7e296;
+$image-color: #282828;
+$fl-color: #ffc600;
+
+//fonts
+$font_gilroy-bold: gilroyextrabold, Arial, sans-serif;
+$font_gilroy-light: gilroylight, Arial, sans-serif;
+$font_opensans: opensans, Arial, sans-serif;
+$font_opensans-light: opensanslight, Arial, sans-serif;
+
+
+.title {
+  max-width: 1040px;
+  margin: auto;
+}
+
+.title-title {
+  font: 47px/30px $font_gilroy-bold;
+}
+
+.title-breadcrumb {
+  font: 14px/30px $font_opensans-light;
+  margin: 0 35px 0 0;
+  display:flex;
+  flex-wrap:wrap;
+  padding:0 0 45px 0;
+  list-style:none;
+
+    .title-breadcrumb-item + .title-breadcrumb-item {
+        padding-left: 5px;
+
+        &:before {
+            padding-right: 5px;
+        }
+    }
+
+    a,
+    .active {
+      text-decoration: none;
+      color: #b2b2b2;
+    }
+}
+
+.main_catalog {
+  display: flex;
+}
+
+.sidebar {
+  width: 35%;
+  background: #efefef;
+}
+
+.sidebar-header {
+  height: 70px;
+  background: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-catalog_block {
+  width: 65%;
+  background: #ffffff;
+}
+
+.tab-block {
+  display: none;
+}
+
+.tab-radio:nth-of-type(1):checked ~ .tab-block:nth-of-type(1),
+.tab-radio:nth-of-type(2):checked ~ .tab-block:nth-of-type(2),
+.tab-radio:nth-of-type(3):checked ~ .tab-block:nth-of-type(3) {
+  display: block;
+  padding: 5px;
+  border: 1px solid #aaa;
+}
+
+
+
+
+.tabs {
+   width: 100%;
+   max-width: 500px;
+}
+/* Стили для списка вкладок */
+.tab-header {
+   list-style: none;
+   padding-left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 0;
+}
+/* Стили для вкладки */
+.tab-header__item {
+   padding: 10px 20px;
+   margin-right: 5px;
+   cursor: pointer;
+   border: 1px solid #ddd;
+}
+/* Стили для активной вкладки */
+.tab-header__item.active {
+   color: red;
+   border-bottom: none;
+   position: relative;
+   background-color: #fff;
+}
+/* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+/* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+.tab-content__item {
+   display: none;
+   padding: 20px;
+   border: 1px solid #ddd;
+   margin-top: -1px;
+}
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+   display: block;
+}

@@ -34,8 +34,8 @@ body {
 }
 
 .header {
-  min-height: 300px;
-  width: 1040px;
+  min-height: 188px;
+  max-width: 1040px;
   margin: auto;
   margin-top: 40px;
   padding: 0 60px;
@@ -48,11 +48,12 @@ body {
   text-transform: uppercase;
 }
 .header-lable :hover {
-  opacity: 0.4;
-  color: rgba(255, 255, 255, 0.4);
+  opacity: 0.6;
+  cursor: pointer;
 }
 .header-lable :active {
-  opacity: 0.7;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .header-form {
@@ -63,21 +64,28 @@ body {
   width: 50%;
 }
 
+.header-select {
+  display: block;
+  background: none;
+  border: none;
+}
+
 .header-block__flex {
   display: flex;
 }
 
 .header-block1 {
-  width: 50%;
+  width: 55%;
 }
 
 .header-li {
+  letter-spacing: 4px;
   font: 18px/30px gilroyextrabold, Arial, sans-serif;
   text-transform: uppercase;
 }
 
 .header-block2 {
-  justify-content: end;
+  width: 45%;
 }
 
 .header-submit {
@@ -91,20 +99,36 @@ body {
 }
 
 .header-button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 0;
   font: 15px/36px opensanslight, Arial, sans-serif;
   background: none;
   border: none;
 }
 .header-button :hover {
-  opacity: 0.4;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.header-button :active {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
-.header-button_image {
-  fill: #282828;
+.header-button_right {
+  float: right;
 }
 
 .header-nav {
   display: flex;
+}
+.header-nav :hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.header-nav :active {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .header-nav__space-between {
@@ -112,22 +136,32 @@ body {
 }
 
 .header-nav__end {
-  justify-content: end;
+  justify-content: flex-end;
+}
+
+.main {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.main-yellow_block {
+  background: #f7e296;
+  min-height: 112px;
 }
 
 .main-nav {
-  margin: -100px auto 100px auto;
-  width: 1160px;
+  margin: -110px auto 100px auto;
   display: flex;
-  justify-content: space-between;
-}
-
-.main-block {
-  padding-left: 90px;
+  justify-content: space-around;
 }
 
 .main-block2 {
-  width: 50%;
+  margin-top: 25px;
+}
+
+.main-line_top {
+  margin-bottom: -35px;
+  width: 17%;
 }
 
 .main-text {
@@ -135,11 +169,14 @@ body {
 }
 
 .main-button {
+  text-decoration: line-through;
+  text-decoration-color: #ffc600;
   border: none;
 }
 
 .main-h2 {
   font: 47px/60px gilroyextrabold, Arial, sans-serif;
+  margin-bottom: 0;
 }
 
 .main-number {
@@ -149,9 +186,16 @@ body {
 
 .menu {
   margin: auto;
-  width: 1160px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
+}
+
+.menu-block :hover {
+  cursor: pointer;
+}
+.menu-block :active {
+  opacity: 0.3;
 }
 
 .menu-item {
@@ -166,10 +210,11 @@ body {
 
 .menu-block-item :hover {
   background: #ffc600;
+  cursor: pointer;
 }
 .menu-block-item :active {
   background: #ffc600;
-  fill-opacity: 0.7;
+  cursor: pointer;
 }
 
 .menu-item_done {
@@ -204,7 +249,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 30%;
+  width: 24%;
   height: 50px;
   border-right: 5px solid #000000;
   line-height: 50px;
@@ -237,27 +282,40 @@ body {
 .grey_block-input:nth-of-type(1):checked ~ .grey_block-tab:nth-of-type(1),
 .grey_block-input:nth-of-type(2):checked ~ .grey_block-tab:nth-of-type(2),
 .grey_block-input:nth-of-type(3):checked ~ .grey_block-tab:nth-of-type(3) {
-  display: block;
-  padding: 1px 30% 1px 40%;
+  display: flex;
+  padding: 1px 0 1px 34%;
 }
 
 .logo-menu {
   margin: 110px auto;
-  width: 1160px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo-image1 {
-  background: url(../images/logo-1.jpg.png);
+.logo-dji :hover {
+  background: url(../images/dji-color.png);
+  cursor: pointer;
 }
-.logo-image1 :hover {
-  background: url(../images/logo-1.jpg.copy.png);
+
+.logo-sp_gadgets :hover {
+  background: url(../images/sp_gadgets-color.png);
+  cursor: pointer;
+}
+
+.logo-gopro :hover {
+  background: url(../images/gopro-color.png);
+  cursor: pointer;
+}
+
+.logo-vive :hover {
+  background: url(../images/vive-color.png);
+  cursor: pointer;
 }
 
 .about_us {
-  margin: auto;
-  width: 1160px;
+  margin: 0 auto 50px auto;
+  max-width: 1160px;
   display: flex;
 }
 
@@ -269,7 +327,12 @@ body {
   width: 50%;
 }
 
+.about_us-line_top {
+  width: 13%;
+}
+
 .about_us-lable {
+  margin-top: 55px;
   font: 47px/36px gilroyextrabold, Arial, sans-serif;
 }
 
@@ -282,50 +345,141 @@ body {
 }
 
 .about_us-ul {
-  list-style-type: circle;
-  color: #e5e5e5;
+  padding: 0;
 }
 
 .about_us-li {
+  list-style-type: circle;
+  color: #e5e5e5;
   font: 15px/30px gilroyextrabold, Arial, sans-serif;
+}
+
+.about_us-li-name {
   color: #282828;
 }
 
+.about_us-map {
+  margin-top: 25px;
+}
+
 .footer {
-  padding: 68px 0 78px 0;
   width: 100%;
-  color: blueviolet;
+  min-height: 327px;
   background: #464646;
 }
 
 .footer-content {
+  display: flex;
   margin: auto;
-  width: 1160px;
+  max-width: 1160px;
 }
 
-.footer-line {
-  display: flex;
+.footer-block1, .footer-block3 {
+  padding-top: 30px;
+  height: 100%;
+  width: 32%;
 }
 
 .footer-lable {
   color: #ffc600;
-  font: 36px/21px gilroyextrabold, Arial, sans-serif;
+  font: 48px/21px gilroyextrabold, Arial, sans-serif;
   text-transform: uppercase;
+}
+.footer-lable :hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer-lable :active {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.footer-line_bottom {
+  width: 20%;
+}
+
+.footer-block2 {
+  height: 100%;
+  width: 36%;
+}
+
+.footer-block3 {
+  margin-top: 40px;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav {
+  margin-top: 37%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav :hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer-nav :active {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.footer-li {
+  letter-spacing: 4px;
+  font: 18px/30px gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
 }
 
 .footer-button {
+  font: 15px/36px opensanslight, Arial, sans-serif;
   background: none;
   border: none;
   color: white;
+  opacity: 1;
+}
+.footer-button :hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer-button :active {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .footer-button_image {
   fill: #282828;
 }
 
+.footer-telephone {
+  margin-top: 42px;
+  text-align: end;
+}
+
 .footer-address, .footer-telephone {
-  font: 15px/30px opensanslight, Arial, sans-serif;
+  font: 15px/36px opensanslight, Arial, sans-serif;
   color: white;
+}
+
+.footer-logo_html {
+  margin-top: 55px;
+  display: block;
+  text-align: end;
+}
+.footer-logo_html :hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer-logo_html :active {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
