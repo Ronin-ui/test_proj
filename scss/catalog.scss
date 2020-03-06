@@ -35,6 +35,8 @@ $footer-color: #464646;
 $main-color: #f7e296;
 $image-color: #282828;
 $fl-color: #ffc600;
+$main-block-color: #efefef;
+$main-sidebar-color: #dbdbdb;
 
 //fonts
 $font_gilroy-bold: gilroyextrabold, Arial, sans-serif;
@@ -81,12 +83,12 @@ $font_opensans-light: opensanslight, Arial, sans-serif;
 
 .sidebar {
   width: 35%;
-  background: #efefef;
+  background: $main-block-color;
 }
 
 .sidebar-header {
   height: 70px;
-  background: #dbdbdb;
+  background: $main-sidebar-color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +97,18 @@ $font_opensans-light: opensanslight, Arial, sans-serif;
 .main-catalog_block {
   width: 65%;
   background: #ffffff;
+}
+
+.main-catalog_header {
+  padding: 0 0 0 70px;
+  height: 70px;
+  background: $main-block-color;
+}
+
+.main-catalog_header-content {
+  padding: 70px 0 0 70px;
+  display: grid;
+  grid-template-columns: 400px 400px
 }
 
 .tab-block {

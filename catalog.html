@@ -10,50 +10,52 @@
 <input class="tab-radio" type="radio" name="tabs" id="id1"/>
 <input class="tab-radio" type="radio" name="tabs" id="id2" checked/>
 <input class="tab-radio" type="radio" name="tabs" id="id3"/>
-    <header class="header">
-        <h1 class="header-lable"><a>Device</a></h1>
-        <form class="header-form">
-            <div class="header-block">
-                <button class="header-submit" type="submit"><img src="images/user_black.png" alt="альтернативный текст"></button>
+    <div class="wrapper">
+        <a href="index.html" class="logo">Device</a>
+        <header class="header">
+            <form class="header-block">
+                <button class="header-submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
                 <input class="header-search" type="search" placeholder="Поиск по сайту">
                 <select class="header-select">
                     <option class="header-option">Каталог товаров</option>
                     <option class="header-option">Каталог товаров</option>
                 </select>
-            </div>
+            </form>
 
-            <div class="header-block header-block__flex">
-                <div class="header-block1">
+            <div class="header-block">
+                <div>
                     <button class="header-button">
-                        <span><img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти</span>
+                        <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
                     </button>
-                    <nav class="header-nav header-nav__space-between">
-                        <div class="header-li">Доставка</div>
-                        <div class="header-li">Гарантия</div>
-                    </nav>
+                    <button class="header-button margin_left-220px">
+                        <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
+                    </button>
+                    <button class="header-button text_right">
+                        <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
+                    </button>
                 </div>
-                <div class="header-block2">
-                    <button class="header-button">
-                        <span><img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить</span>
-                    </button>
-                    <button class="header-button header-button_right">
-                        <span><img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина</span>
-                    </button>
-                    <nav class="header-nav header-nav__end">
-                        <div class="header-li">Контакты</div>
-                    </nav>
+                <div class="header-nav">
+                    <a class="header-li" href="#">Доставка</a>
+                    <a class="header-li margin_left-35px" href="#">Гарантия</a>
+                    <a class="header-li text_right" href="#">Контакты</a>
                 </div>
             </div>
-        </form>
-    </header>
 
+        </header>
+    </div>
     <header class="title">
         <h1 class="title-title">Моноподы для селфи</h1>
         <nav aria-label="title-breadcrumb">
             <ul class="title-breadcrumb">
-                <li class="title-breadcrumb-item"><a href="#">Главная</a></li>&#8195;<span><img src="images/nav-arrow.png" alt="альтернативный текст"></span>&#8195;
-                <li class="title-breadcrumb-item"><a href="#">Каталог товаров</a></li>&#8195;<span><img src="images/nav-arrow.png" alt="альтернативный текст"></span>&#8195;
-                <li class="title-breadcrumb-item active" aria-current="page">Моноподы для селфи</li>
+                <li class="title-breadcrumb-item">
+                    <a href="#">Главная</a>
+                </li>&#8195;<span><img src="images/nav-arrow.png" alt="альтернативный текст"></span>&#8195;
+                <li class="title-breadcrumb-item">
+                    <a href="#">Каталог товаров</a>
+                </li>&#8195;<span><img src="images/nav-arrow.png" alt="альтернативный текст"></span>&#8195;
+                <li class="title-breadcrumb-item active" aria-current="page">
+                    Моноподы для селфи
+                </li>
             </ul>
         </nav>
     </header>
@@ -63,93 +65,80 @@
             <div class="sidebar-header">
                 <span>Фильтр:</span>
             </div>
-            <nav class="collapse navbar-collapse show accordion" id="sidebar-menu">
-                <div class="nav-item" id="headingOne">
-                    <button class="nav-link" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                        Вагові станції
-                    </button>
-                </div>
-                <div id="collapseOne" class="collapse card-body show" aria-labelledby="headingOne">
-                    <a href="#" class="nav-sub-link">Назва організації № 1</a>
-                    <a href="#" class="nav-sub-link active">Назва організації № 2</a>
-                    <a href="#" class="nav-sub-link">Назва організації № 3</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#" class="nav-link">довідники</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#" class="nav-link">журнал</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#" class="nav-link">користувачі та группи</a>
-                </div>
-                <div class="nav-item" id="headingTwo">
-                    <button class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                            aria-expanded="true" aria-controls="collapseTwo">
-                        Налаштування
-                    </button>
-                </div>
-                <div id="collapseTwo" class="collapse card-body" aria-labelledby="headingTwo">
-                    <a href="#" class="nav-sub-link">Налаштування № 1</a>
-                    <a href="#" class="nav-sub-link">Налаштування № 2</a>
-                    <a href="#" class="nav-sub-link">Налаштування № 3</a>
-                </div>
-                <div class="nav-item" id="headingThree">
-                    <button class="nav-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                            aria-expanded="true" aria-controls="collapseThree">
-                        Cклади
-                    </button>
-                </div>
-                <div id="collapseThree" class="collapse card-body" aria-labelledby="headingThree">
-                    <a href="#" class="nav-sub-link">Склад № 1</a>
-                    <a href="#" class="nav-sub-link">Склад № 2</a>
-                    <a href="#" class="nav-sub-link">Склад № 3</a>
-                </div>
+            <nav class="sidebar-menu">
+
             </nav>
         </aside>
         <main class="main-catalog_block">
-            <div>sdsa</div>
+            <div class="main-catalog_header">
+                <span>
+                    Сортировка:
+                </span>
+                <a>По цене</a>
+                <a>По типу</a>
+                <a>По популярности</a>
+            </div>
+            <div class="main-catalog_header-content">
+                <div style="min-height: 480px">
+                    <img src="images/item-1.jpg.png" alt="альтернативный текст">
+                    <span style="display: block">Любительская селфи-палка</span>
+                </div>
+                <div style="min-height: 480px">
+                    <img src="images/item-2.jpg.png" alt="альтернативный текст">
+                    <span style="display: block">Профессиональная селфи-палка</span>
+                </div>
+                <div style="min-height: 480px">
+                    <img src="images/item-3.jpg.png" alt="альтернативный текст">
+                    <span style="display: block">Непотопляемая селфи палка</span>
+                </div>
+                <div style="min-height: 480px">
+                    <img src="images/item-4.jpg.png" alt="альтернативный текст">
+                    <span style="display: block">Селфи-палка «Следуй за мной»</span>
+                </div>
+            </div>
+            <div class="main-catalog_pagination">
+
+            </div>
         </main>
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-block1">
-                <h1 class="footer-lable"><p>Device</p></h1>
-                <address class="footer-address">г. Москва, ул. Строителей, 15</address>
-                <br><br><br><br>
-                <hr class="footer-line_bottom" align="left" size="7" color="$fl-color" />
+            <div class="footer-content">
+                <div class="footer-block1">
+                    <a href="index.html" class="logo-footer">Device</a>
+                    <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+                    <br><br><br><br>
+                    <hr class="footer-line_bottom" align="left" size="7" color="$fl-color" />
+                </div>
+                <div class="footer-block2">
+                    <nav class="footer-nav">
+                        <a class="footer-li" href="#">Доставка</a>
+                        <a class="footer-li" href="#">Гарантия</a>
+                        <a class="footer-li" href="#">Контакты</a>
+                    </nav>
+                    <nav class="footer-social">
+                        <div>a</div>
+                        <div>a</div>
+                        <div>a</div>
+                    </nav>
+                </div>
+                <div class="footer-block3">
+                    <form class="footer-form">
+                        <button class="footer-button">
+                            <img src="images/user.png" alt="альтернативный текст">&emsp;Войти
+                        </button>
+                        <button class="footer-button">
+                            <img src="images/compare.png" alt="альтернативный текст">&emsp;Сравнить
+                        </button>
+                        <button class="footer-button">
+                            <img src="images/cart.png" alt="альтернативный текст">&emsp;Корзина
+                        </button>
+                    </form>
+                    <div  class="footer-telephone"><tel>Тел.: +7 (495) 495-95-95</tel></div>
+                    <a class="footer-logo_html" href="https://htmlacademy.ru/"><img src="images/logo-html.png" alt="альтернативный текст"></a>
+                </div>
             </div>
-            <div class="footer-block2">
-                <nav class="footer-nav">
-                    <span class="footer-li">Доставка</span>
-                    <span class="footer-li">Гарантия</span>
-                    <span class="footer-li">Контакты</span>
-                </nav>
-                <nav class="footer-social">
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                </nav>
-            </div>
-            <div class="footer-block3">
-                <form class="footer-form">
-                    <button class="footer-button">
-                        <span><img src="images/user.png" alt="альтернативный текст">&emsp;Войти</span>
-                    </button>
-                    <button class="footer-button">
-                        <span><img src="images/compare.png" alt="альтернативный текст">&emsp;Сравнить</span>
-                    </button>
-                    <button class="footer-button">
-                        <span><img src="images/cart.png" alt="альтернативный текст">&emsp;Корзина</span>
-                    </button>
-                </form>
-                <div  class="footer-telephone"><tel>Тел.: +7 (495) 495-95-95</tel></div>
-                <div class="footer-logo_html"><img src="images/logo-html.png" alt="альтернативный текст"></div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 <div class="tab-block">первая вкладка</div>
   <div class="tab-block">вторая вкладка</div>
   <div class="tab-block">третья вкладка</div>
@@ -244,6 +233,7 @@
       </li>
    </ul>
 </div>
+
  <script>
      var jsTriggers = document.querySelectorAll('.js-tab-trigger'),
         jsContents = document.querySelectorAll('.js-tab-content');

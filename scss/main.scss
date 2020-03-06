@@ -45,33 +45,38 @@ $font_opensans-light: opensanslight, Arial, sans-serif;
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
-
-.header {
-  min-height: 188px;
-  max-width: 1040px;
+.wrapper {
+  max-width: 1160px;
   margin: auto;
-  margin-top: 40px;
-  padding: 0 60px;
-  color: $image-color;
-  background: $main-color;
 }
 
-.header-lable {
-  font: 48px/1px $font_gilroy-bold;
+
+.logo {
+  display: block;
+  margin: 0 auto -70px 60px;
+  text-decoration: none;
+  color: $image-color;
+  font: 48px/1.3 $font_gilroy-bold;
   text-transform: uppercase;
-  :hover {
+
+  &:hover {
     opacity: .6;
     cursor: pointer;
   }
-  :active {
+
+  &:active {
     opacity: .3;
     cursor: pointer;
   }
 }
 
-.header-form {
+.header {
+  max-width: 1040px;
+  margin: 40px auto 0 auto;
+  padding: 50px 60px;
+  color: $image-color;
+  background: $main-color;
   display: flex;
 }
 
@@ -79,39 +84,27 @@ body {
   width: 50%;
 }
 
-.header-select {
-  display: block;
-  background: none;
-  border: none;
-}
-
-.header-option{
-}
-
-.header-block__flex{
-  display: flex;
-}
-
-.header-block1 {
-  width: 55%;
-}
-
-.header-li {
-  letter-spacing: 4px;
-  font: 18px/30px $font_gilroy-bold;
-  text-transform: uppercase;
-}
-
-.header-block2 {
-  width: 45%;
-}
-
 .header-submit {
+  vertical-align: -2px;
   background: none;
   border: none;
 }
 
 .header-search {
+  opacity: .3;
+  font: 15px/36px $font_opensans-light;
+  background: none;
+  border: none;
+  &:hover {
+    opacity: .6;
+  }
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.header-select {
+  display: block;
   background: none;
   border: none;
 }
@@ -123,39 +116,48 @@ body {
   font: 15px/36px $font_opensans-light;
   background: none;
   border: none;
-  :hover {
+  &:hover {
     opacity: .6;
     cursor: pointer;
   }
-  :active {
+  &:active {
     opacity: .3;
     cursor: pointer;
   }
 }
 
-.header-button_right {
+.text_right {
   float: right;
 }
 
+.margin_left-35px {
+  margin-left: 35px;
+}
+
+.margin_left-220px {
+  margin-left: 220px;
+}
+
 .header-nav {
-  display: flex;
-    :hover {
+
+}
+
+.header-li {
+  text-decoration: none;
+  color: $image-color;
+  letter-spacing: 4px;
+  font: 18px/30px $font_gilroy-bold;
+  text-transform: uppercase;
+    &:hover {
       opacity: .6;
       cursor: pointer;
     }
-    :active {
+    &:active {
       opacity: .3;
       cursor: pointer;
     }
 }
 
-.header-nav__space-between{
-  justify-content: space-between;
-}
-
-.header-nav__end {
-  justify-content: flex-end;
-}
 .main {
   max-width: 1160px;
   margin: auto;
@@ -208,15 +210,15 @@ body {
 }
 
 .menu-block {
-  :hover {
-    cursor: pointer;
-  }
-  :active {
+  text-decoration: none;
+  color: $image-color;
+  font: 18px/20px $font_gilroy-bold;
+  &:active {
     opacity: .3;
   }
 }
 
-.menu-item {
+.menu-item{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,26 +226,15 @@ body {
   height: 160px;
   background: $main-color;
   margin-bottom: 39px;
+    &:hover{
+      background: $fl-color;
+      cursor: pointer;
+    }
 }
 
-.menu-block-item{
-  :hover{
-    background: $fl-color;
-    cursor: pointer;
-  }
-  :active{
-    background: $fl-color;
-    cursor: pointer;
-  }
-}
-
-.menu-item_done {
+.menu-item__done {
   align-items: flex-end;
   padding-bottom: 1px;
-}
-
-.menu-lable {
-  font: 18px/20px $font_gilroy-bold;
 }
 
 .grey_block {
@@ -258,8 +249,11 @@ body {
   height: 320px;
   margin: auto;
 }
+.grey_block-input {
+  opacity: 0;
+}
 
-.grey_block-tab, .grey_block-input {
+.grey_block-tab {
   display: none;
   min-height: 150px; /* 50px × 3 вкладки */
 }
@@ -394,20 +388,21 @@ body {
 }
 
 .footer-block1, .footer-block3 {
-  padding-top: 30px;
-  height: 100%;
+  padding-top: 70px;
   width: 32%;
 }
-
-.footer-lable {
+.logo-footer {
+  text-decoration: none;
   color: $fl-color;
-  font: 48px/21px $font_gilroy-bold;
+  font: 48px/1.3 $font_gilroy-bold;
   text-transform: uppercase;
-  :hover {
+
+  &:hover {
     opacity: .6;
     cursor: pointer;
   }
-  :active {
+
+  &:active {
     opacity: .3;
     cursor: pointer;
   }
@@ -418,12 +413,7 @@ body {
 }
 
 .footer-block2 {
-  height: 100%;
   width: 36%;
-}
-
-.footer-block3 {
-  margin-top: 40px;
 }
 
 .footer-form {
@@ -450,11 +440,20 @@ body {
   }
 }
 
-.footer-li{
+.footer-li {
+  text-decoration: none;
   letter-spacing: 4px;
   font: 18px/30px $font_gilroy-bold;
   text-transform: uppercase;
   color: white;
+  &:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
+  &:active {
+    opacity: .3;
+    cursor: pointer;
+  }
 }
 
 .footer-button {
@@ -462,12 +461,12 @@ body {
   background: none;
   border: none;
   color: white;
-  opacity: 1;
-  :hover {
-    opacity: .6;
+  opacity: .6;
+  &:hover {
+    opacity: 1;
     cursor: pointer;
   }
-  :active {
+  &:active {
     opacity: .3;
     cursor: pointer;
   }
@@ -491,11 +490,11 @@ body {
   margin-top: 55px;
   display: block;
   text-align: end;
-  :hover {
+  &:hover {
     opacity: .6;
     cursor: pointer;
   }
-  :active {
+  &:active {
     opacity: .3;
     cursor: pointer;
   }
