@@ -7,38 +7,40 @@
 </head>
 <body>
     <div class="wrapper">
-        <a href="index.html" class="logo">Device</a>
-
+        <div class="logo">
+            <a href="index.html" class="logo-title">Device</a>
+        </div>
         <header class="header">
-            <form class="header-block">
-                <button class="header-submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
-                <input class="header-search" type="search" placeholder="Поиск по сайту">
-                <select class="header-select" name="товаров">
-                    <option value="" hidden>Каталог товаров</option>
-                    <option class="header-option">Каталог</option>
-                    <option class="header-option">товаров</option>
-                </select>
+            <form class="header__block">
+                <button class="header__submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
+                <input class="header__search" type="search" placeholder="Поиск по сайту">
+                <div class="header__select">
+                    <select class="header__select">
+                        <option value="" hidden>Каталог товаров</option>
+                        <option class="header-option">Каталог</option>
+                        <option class="header-option">товаров</option>
+                    </select>
+                </div>
             </form>
 
-            <div class="header-block">
+            <div class="header__block">
                 <div>
-                    <button class="header-button">
+                    <button class="header__button">
                         <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
                     </button>
-                    <button class="header-button margin_left-220px">
+                    <button class="header__button margin-left-220px">
                         <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
                     </button>
-                    <button class="header-button text_right">
+                    <button class="header__button text-right">
                         <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
                     </button>
                 </div>
-                <div class="header-nav">
-                    <a class="header-li" href="#">Доставка</a>
-                    <a class="header-li margin_left-35px" href="#">Гарантия</a>
-                    <a class="header-li text_right" href="#">Контакты</a>
+                <div class="header__nav">
+                    <a class="header__li" href="#">Доставка</a>
+                    <a class="header__li margin-left-35px" href="#">Гарантия</a>
+                    <a class="header__li text-right" href="#">Контакты</a>
                 </div>
             </div>
-
         </header>
 
         <nav class="main">
@@ -55,9 +57,14 @@
                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                     </p>
                     <button class="main-button">Подробнее</button>
-                    <input class="tab-radio" type="radio" name="tabs" id="id1"/>
-                    <input class="tab-radio" type="radio" name="tabs" id="id2" checked/>
-                    <input class="tab-radio" type="radio" name="tabs" id="id3"/>
+                    <div style="display: inline; margin-left: 200px">
+                        <input class="tab-radio" type="radio" name="radio-tabs" id="id1"/>
+                        <label for="id1">А</label>
+                        <input class="tab-radio" type="radio" name="radio-tabs" id="id2" checked/>
+                        <label for="id2">Б</label>
+                        <input class="tab-radio" type="radio" name="radio-tabs" id="id3"/>
+                        <label for="id3">С</label>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -105,42 +112,49 @@
             </a>
         </nav>
     </div>
-        <nav class="grey_block">
-            <div class="grey_block-tabs">
-                <input class="grey_block-input" type="radio" name="odin" checked="checked" id="vkl1"/>
-                <label class="grey_block-lable" for="vkl1">Доставка</label>
+         <nav class="grey_block">
+            <div class="grey_block__tabs">
 
-                <input class="grey_block-input" type="radio" name="odin" id="vkl2"/>
-                <label class="grey_block-lable" for="vkl2">Гарантия</label>
+                <input class="grey_block__input" type="radio" name="odin"id="vkl1" checked/>
+                <label class="grey_block__lable" for="vkl1">Доставка</label>
 
-                <input class="grey_block-input" type="radio" name="odin" id="vkl3"/>
-                <label class="grey_block-lable" for="vkl3">Кредит</label>
-                <div class="grey_block-tab">
-                    <div>
+                <input class="grey_block__input" type="radio" name="odin" id="vkl2"/>
+                <label class="grey_block__lable" for="vkl2">Гарантия</label>
+
+                <input class="grey_block__input" type="radio" name="odin" id="vkl3"/>
+                <label class="grey_block__lable" for="vkl3">Кредит</label>
+                <div class="grey_block__tab">
+                    <div class="tab1">
                         <h2 class="grey_block-h2">Доставка</h2>
                         <p class="grey_block-text">Мы с удовольствием доставим ваш товар прямо к вашему
                             подъезду совершенно бесплатно! Ведь мы неплохо
                             заработаем, поднимая его на ваш этаж</p>
                     </div>
-                    <img src="images/delivery.png" alt="альтернативный текст">
+                    <div class="grey_people">
+                        <img src="images/delivery.png" alt="альтернативный текст">
+                    </div>
                 </div>
-                <div class="grey_block-tab">
-                    <div>
+                <div class="grey_block__tab">
+                    <div class="tab1">
                         <h2 class="grey_block-h2">Гарантия</h2>
                         <p class="grey_block-text">Если из-за возгорания купленного у нас товара у вас
                             сгорит дом - не переживайте, мы выдадим вам новый.
                             Товар, не дом, конечно же</p>
                     </div>
-                    <img src="images/delivery.png" alt="альтернативный текст">
+                    <div class="grey_people">
+                        <img src="images/delivery.png" alt="альтернативный текст">
+                    </div>
                 </div>
-                <div class="grey_block-tab">
-                    <div>
+                <div class="grey_block__tab">
+                    <div class="tab1">
                         <h2 class="grey_block-h2">Кредит</h2>
                         <p class="grey_block-text">Залезть в долговую яму стало проще! Кредитные
                             консультанты подберут для вас наиболее выгодные
                             условия кредита. Выгодные для нашего банка, разумеется.</p>
                     </div>
-                    <img src="images/delivery.png" alt="альтернативный текст">
+                    <div class="grey_people">
+                        <img src="images/delivery.png" alt="альтернативный текст">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -169,8 +183,27 @@
                 <hr class="about_us-line_top" align="left" size="7" color="black" />
                 <h2 class="about_us-lable">Контакты</h2>
                 <p class="about_us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>проверить работоспособность покупки. Всякое бывает.</p>
-                <iframe class="about_us-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11336.534602087972!2d36.23475434809734!3d49.98936297457882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1583415325241!5m2!1sru!2sua" width="560" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <button>Напишите нам</button>
+                <a href="#">
+                    <iframe class="about_us-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11336.534602087972!2d36.23475434809734!3d49.98936297457882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1583415325241!5m2!1sru!2sua" width="560" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </a>
+
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Напишите нам</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal__content">
+                    <span class="close">&times;</span>
+                    <p>Напишите нам..</p>
+                      <span>Ваш e-mail:</span>
+                      <input class="modal__input"/>
+                      <input class="modal__input"/>
+                    <div class="modal__element">aa</div>
+                  </div>
+
+                </div>
             </nav>
 
         </footer>
@@ -189,10 +222,17 @@
                         <a class="footer-li" href="#">Гарантия</a>
                         <a class="footer-li" href="#">Контакты</a>
                     </nav>
-                    <nav class="footer-social">
-                        <img src="images/ФБ%20копия.png" alt="альтернативный текст">
-                        <img src="images/instagram.png" alt="альтернативный текст">
-                        <img src="images/Твитер%20копия.png" alt="альтернативный текст">
+
+                    <nav class="social">
+                        <a href="#" class="social__item">
+                            <img src="images/ФБ%20копия.png" class="social__image" alt="facebook">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="images/instagram.png" class="social__image" alt="instagram">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="images/Твитер%20копия.png" class="social__image" alt="twitter">
+                        </a>
                     </nav>
                 </div>
                 <div class="footer-block3">
@@ -212,5 +252,33 @@
                 </div>
             </div>
         </footer>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>

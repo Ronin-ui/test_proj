@@ -10,37 +10,42 @@
 <input class="tab-radio" type="radio" name="tabs" id="id1"/>
 <input class="tab-radio" type="radio" name="tabs" id="id2" checked/>
 <input class="tab-radio" type="radio" name="tabs" id="id3"/>
+<div class="tab-block" id="22">первая вкладка</div>
+<div class="tab-block">вторая вкладка</div>
+<div class="tab-block">третья вкладка</div>
     <div class="wrapper">
-        <a href="index.html" class="logo">Device</a>
+        <div class="logo">
+            <a href="index.html" class="logo-title">Device</a>
+        </div>
         <header class="header">
-            <form class="header-block">
-                <button class="header-submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
-                <input class="header-search" type="search" placeholder="Поиск по сайту">
-                <select class="header-select">
-                    <option class="header-option">Каталог товаров</option>
-                    <option class="header-option">Каталог товаров</option>
+            <form class="header__block">
+                <button class="header__submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
+                <input class="header__search" type="search" placeholder="Поиск по сайту">
+                <select class="header__select" name="товаров">
+                    <option value="" hidden>Каталог товаров</option>
+                    <option class="header-option">Каталог</option>
+                    <option class="header-option">товаров</option>
                 </select>
             </form>
 
-            <div class="header-block">
+            <div class="header__block">
                 <div>
-                    <button class="header-button">
+                    <button class="header__button">
                         <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
                     </button>
-                    <button class="header-button margin_left-220px">
+                    <button class="header__button margin-left-220px">
                         <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
                     </button>
-                    <button class="header-button text_right">
+                    <button class="header__button text-right">
                         <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
                     </button>
                 </div>
-                <div class="header-nav">
-                    <a class="header-li" href="#">Доставка</a>
-                    <a class="header-li margin_left-35px" href="#">Гарантия</a>
-                    <a class="header-li text_right" href="#">Контакты</a>
+                <div class="header__nav">
+                    <a class="header__li" href="#">Доставка</a>
+                    <a class="header__li margin-left-35px" href="#">Гарантия</a>
+                    <a class="header__li text-right" href="#">Контакты</a>
                 </div>
             </div>
-
         </header>
     </div>
     <header class="title">
@@ -63,46 +68,121 @@
     <main class="main_catalog">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <span>Фильтр:</span>
+                <span class="sidebar__header-content">Фильтр:</span>
             </div>
+            <div class="sidebar-wrapper">
             <nav class="sidebar-menu">
-
+                <div class="sidebar-menu__cost">
+                    <div class="sidebar-menu__line"></div>
+                    <div class="sidebar-menu__title">Стоимость</div>
+                    <progress value="23" max="100"></progress>
+                    <div class="gan-track">
+                        <div class="handle-left"></div>
+                    </div>
+                </div>
+                <div class="sidebar-menu__bluetooth">
+                    <div class="sidebar-menu__line"></div>
+                    <div class="sidebar-menu__title">Цвет</div>
+                    <div>
+                        <input class="tab-radio" type="checkbox" name="checked" id="#"/>
+                        <label>Черный</label>
+                    </div>
+                    <div>
+                        <input class="tab-radio" type="checkbox" name="checked" id="#"/>
+                        <label>Белый</label>
+                    </div>
+                    <div>
+                        <input class="tab-radio" type="checkbox" name="checked" id="#"/>
+                        <label>Синий</label>
+                    </div>
+                    <div>
+                        <input class="tab-radio" type="checkbox" name="checked" id="#"/>
+                        <label>Красный</label>
+                    </div>
+                    <div>
+                        <input class="tab-radio" type="checkbox" name="checked" id="#"/>
+                        <label>Розовый</label>
+                    </div>
+                </div>
+                <div class="sidebar-menu__bluetooth">
+                    <div class="sidebar-menu__line"></div>
+                    <div class="sidebar-menu__title">Bluetooth</div>
+                    <div>
+                        <input class="tab-radio" type="radio" name="radio" id="#" checked/>
+                        <label>Красный</label>
+                    </div>
+                    <div>
+                        <input class="tab-radio" type="radio" name="radio" id="#"/>
+                        <label>Розовый</label>
+                    </div>
+                </div>
             </nav>
+                </div>
         </aside>
         <main class="main-catalog_block">
             <div class="main-catalog_header">
-                <span>
+                <span class="sort">
                     Сортировка:
                 </span>
-                <a>По цене</a>
-                <a>По типу</a>
-                <a>По популярности</a>
+                <a class="sort-a" href="#">По цене</a>
+                <a class="sort-a" href="#">По типу</a>
+                <a class="sort-a" href="#">По популярности</a>
+                <div style="display: inline; position: relative; right: 0;">
+                    <a class="sort-a" href="#"><img src="images/icon-up-dir-active%C2%A0.png" alt="альтернативный текст"></a>
+                    <a class="sort-a" href="#"><img src="images/icon-down-dir-active.png" alt="альтернативный текст"></a>
+                </div>
             </div>
             <div class="main-catalog_header-content">
-                <div style="min-height: 480px">
+                <a href="#">
                     <img src="images/item-1.jpg.png" alt="альтернативный текст">
-                    <span style="display: block">Любительская селфи-палка</span>
-                </div>
-                <div style="min-height: 480px">
+                    <div style="display: flex; margin: 25px 0 70px 0; justify-content: space-between; max-width: 360px">
+                        <span>Любительская селфи-палка</span>
+                        <span>500 руб.</span>
+                    </div>
+                </a>
+                <a href="#">
                     <img src="images/item-2.jpg.png" alt="альтернативный текст">
-                    <span style="display: block">Профессиональная селфи-палка</span>
-                </div>
-                <div style="min-height: 480px">
+                    <div style="display: flex; margin: 25px 0 70px 0; justify-content: space-between; max-width: 360px">
+                        <span>Профессиональная селфи-палка</span>
+                        <span>1500 руб.</span>
+                    </div>
+                </a>
+                <a href="#">
                     <img src="images/item-3.jpg.png" alt="альтернативный текст">
-                    <span style="display: block">Непотопляемая селфи палка</span>
-                </div>
-                <div style="min-height: 480px">
+                    <div style="display: flex; margin: 25px 0 70px 0; justify-content: space-between; max-width: 360px">
+                        <span>Непотопляемая селфи палка</span>
+                        <span>2500 руб.</span>
+                    </div>
+                </a>
+                <a href="#">
                     <img src="images/item-4.jpg.png" alt="альтернативный текст">
-                    <span style="display: block">Селфи-палка «Следуй за мной»</span>
-                </div>
-            </div>
-            <div class="main-catalog_pagination">
+                    <div style="display: flex; margin: 25px 0 70px 0; justify-content: space-between; max-width: 360px">
+                        <span>Селфи-палка «Следуй за мной»</span>
+                        <span>4900 руб.</span>
+                    </div>
+                </a>
 
             </div>
+
+            <div class="pagination">
+                <span>
+                    <a href="#" class="pagination__span">Назад</a>
+                </span>
+
+                <span>
+                    <a href="#" class="pagination__a pagination__a_active">1</a>
+                    <a href="#" class="pagination__a">2</a>
+                    <a href="#" class="pagination__a">3</a>
+                </span>
+
+                <span>
+                    <a href="#" class="pagination__span">Вперед</a>
+                </span>
+            </div>
+
         </main>
     </main>
-
-    <footer class="footer">
+        <footer class="footer">
             <div class="footer-content">
                 <div class="footer-block1">
                     <a href="index.html" class="logo-footer">Device</a>
@@ -116,10 +196,16 @@
                         <a class="footer-li" href="#">Гарантия</a>
                         <a class="footer-li" href="#">Контакты</a>
                     </nav>
-                    <nav class="footer-social">
-                        <div>a</div>
-                        <div>a</div>
-                        <div>a</div>
+                    <nav class="social">
+                        <a href="#" class="social__item">
+                            <img src="images/ФБ%20копия.png" class="social__image" alt="альтернативный текст">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="images/instagram.png" class="social__image" alt="альтернативный текст">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="images/Твитер%20копия.png" class="social__image" alt="альтернативный текст">
+                        </a>
                     </nav>
                 </div>
                 <div class="footer-block3">
@@ -139,76 +225,6 @@
                 </div>
             </div>
         </footer>
-<div class="tab-block">первая вкладка</div>
-  <div class="tab-block">вторая вкладка</div>
-  <div class="tab-block">третья вкладка</div>
-
-    <nav class="main">
-        <div class="main-yellow_block">
-        </div>
-        <div class="main-nav">
-            <div class="main-block">
-                <img src="images/slider-1.png" alt="альтернативный текст">
-            </div>
-            <div class="main-block2">
-                <hr class="main-line_top" align="left" size="7" color="white" />
-                <h2 class="main-h2">Делай селфи,<span class="main-number">01</span><br> как Бен Стиллер!</h2>
-                <p class="main-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
-                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <button class="main-button">Подробнее</button>
-                <ul class="tab-header">
-                    <input class="tab-radio" type="radio" name="1tabs" id="1"/>
-                    <input class="tab-radio" type="radio" name="1tabs" id="2" checked/>
-                    <input class="tab-radio" type="radio" name="1tabs" id="3"/>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="main2">
-        <div class="main-yellow_block">
-        </div>
-        <div class="main-nav">
-            <div class="main-block">
-                <img src="images/slider-1.png" alt="альтернативный текст">
-            </div>
-            <div class="main-block2">
-                <hr class="main-line_top" align="left" size="7" color="white" />
-                <h2 class="main-h2">Делай селфи,<span class="main-number">01</span><br> как Бен Стиллер!</h2>
-                <p class="main-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
-                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <button class="main-button">Подробнее</button>
-                <ul class="tab-header">
-                    <input class="tab-radio" type="radio" name="1tabs" id="4"/>
-                    <input class="tab-radio" type="radio" name="1tabs" id="5" checked/>
-                    <input class="tab-radio" type="radio" name="1tabs" id="6"/>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="main3">
-        <div class="main-yellow_block">
-        </div>
-        <div class="main-nav">
-            <div class="main-block">
-                <img src="images/slider-1.png" alt="альтернативный текст">
-            </div>
-            <div class="main-block2">
-                <hr class="main-line_top" align="left" size="7" color="white" />
-                <h2 class="main-h2">Делай селфи,<span class="main-number">01</span><br> как Бен Стиллер!</h2>
-                <p class="main-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
-                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <button class="main-button">Подробнее</button>
-                <ul class="tab-header">
-                    <input class="tab-radio" type="radio" name="1tabs" id="7"/>
-                    <input class="tab-radio" type="radio" name="1tabs" id="8" checked/>
-                    <input class="tab-radio" type="radio" name="1tabs" id="9"/>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
 <!-- Общий контейнер для табов -->
 <div class="tabs">

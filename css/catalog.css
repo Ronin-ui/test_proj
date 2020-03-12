@@ -62,15 +62,30 @@
 
 .sidebar {
   width: 35%;
-  background: #efefef;
+  background: #ebebeb;
 }
 
 .sidebar-header {
+  text-align: right;
   height: 70px;
   background: #dbdbdb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.sidebar__header-content {
+  margin-right: 140px;
+  vertical-align: -27px;
+  font: 16px/1.3 gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.sidebar-wrapper {
+  min-width: 200px;
+}
+
+.sidebar-menu__line {
+  max-width: 200px;
+  border-top: 2px solid #282828;
 }
 
 .main-catalog_block {
@@ -81,13 +96,84 @@
 .main-catalog_header {
   padding: 0 0 0 70px;
   height: 70px;
-  background: #efefef;
+  background: #ebebeb;
+}
+
+.sort {
+  font: 16px/1.3 gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  vertical-align: -27px;
+}
+.sort::after {
+  content: "";
+  margin-right: 45px;
+}
+
+.sort-a {
+  text-decoration: none;
+  color: #282828;
+  font: 14px/18px opensans, Arial, sans-serif;
+  vertical-align: -27px;
+  opacity: 0.3;
+}
+.sort-a::after {
+  content: "";
+  margin-right: 25px;
+}
+.sort-a:active {
+  opacity: 1;
 }
 
 .main-catalog_header-content {
   padding: 70px 0 0 70px;
   display: grid;
   grid-template-columns: 400px 400px;
+}
+
+.pagination {
+  margin: 0 0 75px 70px;
+  max-width: 760px;
+  min-height: 70px;
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination__span {
+  color: black;
+  float: left;
+  padding: 8px 30px;
+  text-decoration: none;
+  font: 16px/1.3 gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 1;
+}
+.pagination__span:hover {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  background: #d9d9d9;
+}
+.pagination__span:active {
+  opacity: 0.3;
+}
+.pagination__a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font: 16px/1.3 gilroyextrabold, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 0.3;
+}
+.pagination__a_active {
+  opacity: 1;
+}
+.pagination__a:active {
+  opacity: 1;
 }
 
 .tab-block {
@@ -151,6 +237,12 @@
 /* Стили для активного контейнера вкладки */
 .tab-content__item.active {
   display: block;
+}
+
+.blog_button-holder {
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
 }
 
 /*# sourceMappingURL=catalog.css.map */

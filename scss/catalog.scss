@@ -35,7 +35,7 @@ $footer-color: #464646;
 $main-color: #f7e296;
 $image-color: #282828;
 $fl-color: #ffc600;
-$main-block-color: #efefef;
+$main-block-color: #ebebeb;
 $main-sidebar-color: #dbdbdb;
 
 //fonts
@@ -87,11 +87,31 @@ $font_opensans-light: opensanslight, Arial, sans-serif;
 }
 
 .sidebar-header {
+  text-align: right;
   height: 70px;
   background: $main-sidebar-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.sidebar__header-content {
+  margin-right: 140px;
+  vertical-align: -27px;
+  font: 16px/1.3 $font_gilroy-bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.sidebar-wrapper {
+  min-width: 200px;
+
+}
+
+.sidebar-menu {
+
+}
+
+.sidebar-menu__line {
+  max-width: 200px;
+  border-top: 2px solid $image-color;
 }
 
 .main-catalog_block {
@@ -105,10 +125,82 @@ $font_opensans-light: opensanslight, Arial, sans-serif;
   background: $main-block-color;
 }
 
+.sort {
+  font: 16px/1.3 $font_gilroy-bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  vertical-align: -27px;
+  &::after {
+    content: "";
+    margin-right: 45px;
+  }
+}
+
+.sort-a {
+  text-decoration: none;
+  color: $image-color;
+  font: 14px/18px $font_opensans;
+  vertical-align: -27px;
+  opacity: .3;
+  &::after {
+    content: "";
+    margin-right: 25px;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
 .main-catalog_header-content {
   padding: 70px 0 0 70px;
   display: grid;
   grid-template-columns: 400px 400px
+}
+
+
+.pagination {
+  margin: 0 0 75px 70px;
+  max-width: 760px;
+  min-height: 70px;
+  background: $main-block-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__span {
+    color: black;
+    float: left;
+    padding: 8px 30px;
+    text-decoration: none;
+    font: 16px/1.3 $font_gilroy-bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 1;
+    &:hover {
+      display: flex;
+      align-items: center;
+      height: 52px;
+      background: #d9d9d9;
+    }
+    &:active {
+      opacity: .3;
+    }
+  }
+  &__a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font: 16px/1.3 $font_gilroy-bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: .3;
+    &_active{
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .tab-block {
@@ -170,3 +262,8 @@ $font_opensans-light: opensanslight, Arial, sans-serif;
 .tab-content__item.active {
    display: block;
 }
+
+.blog_button-holder {
+      visibility: visible;
+      background: rgba(0, 0, 0, 0.5);
+      transition: all 0.3s linear; }
