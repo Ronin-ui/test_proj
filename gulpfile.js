@@ -17,7 +17,7 @@ const notify = require('gulp-notify');                // show notify
 const paths = {
   src: {
     html: 'app/*.html',
-    sass: 'sass/**',
+    sass: 'scss/**',
     css: 'css/css',
     js: 'js/*',
     img: 'images/**',
@@ -29,7 +29,7 @@ const paths = {
   },
   dist: {
     html: 'build/',
-    css: '../static/css/',
+    css: 'css/',
     js: 'build/assets/js/',
     img: 'build/assets/img/',
     fonts: 'build/assets/font/',
@@ -97,8 +97,8 @@ gulp.task('server', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('app/*.html', ['html']);
-  gulp.watch('app/assets/sass/**', ['sass']);
+  gulp.watch('/*.html', ['html']);
+  gulp.watch('/scss/**', ['scss']);
   gulp.watch('app/assets/js/**', ['js']);
   gulp.watch('app/assets/img/**', ['img']);
   gulp.watch('app/assets/font/**', ['font']);

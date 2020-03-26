@@ -18,33 +18,35 @@
             <a href="index.html" class="logo-title">Device</a>
         </div>
         <header class="header">
-            <form class="header__block">
+            <form class="">
                 <button class="header__submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
                 <input class="header__search" type="search" placeholder="Поиск по сайту">
-                <select class="header__select" name="товаров">
-                    <option value="" hidden>Каталог товаров</option>
-                    <option class="header-option">Каталог</option>
-                    <option class="header-option">товаров</option>
-                </select>
+                <button class="">
+                    <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
+                </button>
+                <button class="">
+                    <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
+                </button>
+                <button class="">
+                    <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
+                </button>
+                <a class="header__li" href="#">Доставка</a>
+                <a class="header__li" href="#">Гарантия</a>
+                <a class="header__li" href="#">Контакты</a>
             </form>
-
-            <div class="header__block">
-                <div>
-                    <button class="header__button">
-                        <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
-                    </button>
-                    <button class="header__button margin-left-220px">
-                        <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
-                    </button>
-                    <button class="header__button text-right">
-                        <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
-                    </button>
-                </div>
-                <div class="header__nav">
-                    <a class="header__li" href="#">Доставка</a>
-                    <a class="header__li margin-left-35px" href="#">Гарантия</a>
-                    <a class="header__li text-right" href="#">Контакты</a>
-                </div>
+            <div class="header__nav" style="display: flex">
+                <details style="position: absolute; width: 1160px; margin-left: -60px">
+                    <summary style="padding: 20px 60px;"> Каталог товаров <img src="images/plus.png" alt="альтернативный текст"></summary>
+                    <div style="background: #f7e296; padding: 0 60px; height: 152px; display: grid; grid-template-columns: 220px 200px 200px; ">
+                        <a href="">Виртуальная реальность</a>
+                        <a href="">Фитнес браслеты</a>
+                        <a href="">Квадрокоптеры</a>
+                        <a href="">Моноподы для селфи</a>
+                        <a href="">Умные часы</a>
+                        <a href="">Экшн-камеры</a>
+                    </div>
+                </details> 
+                
             </div>
         </header>
     </div>
@@ -53,7 +55,7 @@
         <nav aria-label="title-breadcrumb">
             <ul class="title-breadcrumb">
                 <li class="title-breadcrumb-item">
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>&#8195;<span><img src="images/nav-arrow.png" alt="альтернативный текст"></span>&#8195;
                 <li class="title-breadcrumb-item">
                     <a href="#">Каталог товаров</a>
@@ -161,6 +163,21 @@
                         <span>4900 руб.</span>
                     </div>
                 </a>
+                <div class="pagination">
+                <span>
+                    <a href="#" class="pagination__span">Назад</a>
+                </span>
+
+                <span>
+                    <a href="#" class="pagination__a pagination__a_active">1</a>
+                    <a href="#" class="pagination__a">2</a>
+                    <a href="#" class="pagination__a">3</a>
+                </span>
+
+                <span>
+                    <a href="#" class="pagination__span">Вперед</a>
+                </span>
+            </div>
 
             </div>
 
@@ -197,14 +214,14 @@
                         <a class="footer-li" href="#">Контакты</a>
                     </nav>
                     <nav class="social">
-                        <a href="#" class="social__item">
-                            <img src="images/ФБ%20копия.png" class="social__image" alt="альтернативный текст">
+                        <a href="https://facebook.com/" class="social__item">
+                            <img src="images/ФБ%20копия.png" class="social__image" alt="facebook">
                         </a>
-                        <a href="#" class="social__item">
-                            <img src="images/instagram.png" class="social__image" alt="альтернативный текст">
+                        <a href="https://www.instagram.com/" class="social__item">
+                            <img src="images/instagram.png" class="social__image" alt="instagram">
                         </a>
-                        <a href="#" class="social__item">
-                            <img src="images/Твитер%20копия.png" class="social__image" alt="альтернативный текст">
+                        <a href="https://twitter.com/" class="social__item">
+                            <img src="images/Твитер%20копия.png" class="social__image" alt="twitter">
                         </a>
                     </nav>
                 </div>

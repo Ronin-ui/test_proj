@@ -11,40 +11,44 @@
             <a href="index.html" class="logo-title">Device</a>
         </div>
         <header class="header">
-            <form class="header__block">
+            <form class="">
                 <button class="header__submit" type="submit"><img src="images/search.png" alt="альтернативный текст"></button>
                 <input class="header__search" type="search" placeholder="Поиск по сайту">
-                <div class="header__select">
-                    <select class="header__select">
-                        <option value="" hidden>Каталог товаров</option>
-                        <option class="header-option">Каталог</option>
-                        <option class="header-option">товаров</option>
-                    </select>
-                </div>
+                <button class="">
+                    <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
+                </button>
+                <button class="">
+                    <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
+                </button>
+                <button class="">
+                    <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
+                </button>
             </form>
-
-            <div class="header__block">
-                <div>
-                    <button class="header__button">
-                        <img src="images/user_black.png" alt="альтернативный текст">&emsp;Войти
-                    </button>
-                    <button class="header__button margin-left-220px">
-                        <img src="images/compare_black.png" alt="альтернативный текст">&emsp;Сравнить
-                    </button>
-                    <button class="header__button text-right">
-                        <img src="images/cart_black.png" alt="альтернативный текст">&emsp;Корзина
-                    </button>
-                </div>
-                <div class="header__nav">
-                    <a class="header__li" href="#">Доставка</a>
-                    <a class="header__li margin-left-35px" href="#">Гарантия</a>
-                    <a class="header__li text-right" href="#">Контакты</a>
+            <div class="header__nav" style="display: flex">
+                <details style="position: absolute; width: 1160px; margin-left: -60px">
+                    <summary style="padding: 20px 60px; text-decoration: none; color: #282828;letter-spacing: 4px;
+                        font: 18px/30px gilroyextrabold, Arial, sans-serif;text-transform: uppercase;"> Каталог товаров
+                        <img src="images/plus.png" alt="Plus">
+                    </summary>
+                    <div style="background: #f7e296; padding: 0 60px; height: 152px; display: grid; grid-template-columns: 220px 200px 200px; grid-auto-rows: 40px 40px 40px">
+                        <a href="">Виртуальная реальность</a>
+                        <a href="">Фитнес браслеты</a>
+                        <a href="">Квадрокоптеры</a>
+                        <a href="">Моноподы для селфи</a>
+                        <a href="">Умные часы</a>
+                        <a href="">Экшн-камеры</a>
+                    </div>
+                </details>
+                <div style="margin-bottom: -45px; margin-top: 22px; margin-left: 50%" >
+                    <a class="header__li" style="" href="#">Доставка</a>
+                    <a class="header__li" style="" href="#">Гарантия</a>
+                    <a class="header__li" style="" href="#">Контакты</a>
                 </div>
             </div>
         </header>
 
         <nav class="main">
-            <div class="main-yellow_block">
+            <div class="yellow_block">
             </div>
             <div class="main-nav">
                 <div class="main-block">
@@ -114,7 +118,7 @@
     </div>
          <nav class="grey_block">
             <div class="grey_block__tabs">
-
+              <div>
                 <input class="grey_block__input" type="radio" name="odin"id="vkl1" checked/>
                 <label class="grey_block__lable" for="vkl1">Доставка</label>
 
@@ -224,13 +228,13 @@
                     </nav>
 
                     <nav class="social">
-                        <a href="#" class="social__item">
+                        <a href="https://facebook.com/" class="social__item">
                             <img src="images/ФБ%20копия.png" class="social__image" alt="facebook">
                         </a>
-                        <a href="#" class="social__item">
+                        <a href="https://www.instagram.com/" class="social__item">
                             <img src="images/instagram.png" class="social__image" alt="instagram">
                         </a>
-                        <a href="#" class="social__item">
+                        <a href="https://twitter.com/" class="social__item">
                             <img src="images/Твитер%20копия.png" class="social__image" alt="twitter">
                         </a>
                     </nav>

@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold.woff') format('woff'), url('../fonts/gilroyextrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight.woff') format('woff'), url('../fonts/gilroylight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensanslight';
+    src: url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//color
+$grey-color:#e5e5e5;
+$bg-color: #ffffff;
+$footer-color: #464646;
+$main-color: #f7e296;
+$image-color: #282828;
+$fl-color: #ffc600;
+
+//fonts
+$font_gilroy-bold: gilroyextrabold, Arial, sans-serif;
+$font_gilroy-light: gilroylight, Arial, sans-serif;
+$font_opensans: opensans, Arial, sans-serif;
+$font_opensans-light: opensanslight, Arial, sans-serif;
+
+/* Chrome, Opera, Safari */
+details summary::-webkit-details-marker {
+  display: none;
+}
+details :focus {
+  outline: 0;
+}
+/* Firefox */
+details, summary {
+  display: block;
+}
+details summary:before {
+  content: " ";
+}
+details[open] summary:before {
+  content: " ";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1160px;
+}
+
+.grey_block__input {
+  opacity: 0;
+}
+
+.grey_block__lable {
+  letter-spacing: 4px;
+  font: 18px/30px $font_gilroy-bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  width: 24%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  text-align: start;
+}
+
+.grey_block__tab {
+  margin-left: -100px;
+  display: none;
+  min-height: 235px; /* 50px × 3 вкладки */
+}
+
+.tab1{
+  width: 60%;
+  margin-top: -120px;
+  border-left: 7px solid black;
+}
+
+.grey_block__lable:nth-of-type(2) {
+  top: 51px; /* 50px + 1px border */
+}
+.grey_block__lable:nth-of-type(3) {
+  top: 102px; /* 50px + 1px border первой вкладки + 1px border второй вкладки */
+}
+.grey_block__input[type="radio"]:checked + .grey_block__lable {
+  color: $main-color;
+  background: #000000;
+}
+
+.grey_people {
+  margin-left: 120px;
+  margin-top: -30px;
+}
+
+.grey_block-h2 {
+  margin-top: 80px;
+  margin-left: 115px;
+  font: 47px/36px $font_gilroy-bold;
+}
+
+.grey_block-text {
+  margin-left: 115px;
+  font: 15px/30px $font_opensans-light;
+}
+
+.grey_block__input:nth-of-type(1):checked ~ .grey_block__tab:nth-of-type(1),
+.grey_block__input:nth-of-type(2):checked ~ .grey_block__tab:nth-of-type(2),
+.grey_block__input:nth-of-type(3):checked ~ .grey_block__tab:nth-of-type(3) {
+  display: flex;
+  padding: 1px 0 1px 34%;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* Modal Content */
+  &__content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  min-height: 400px;
+  max-width: 700px;
+  box-shadow: 2px 10px 10px rgba(0,0,0,0.5);
+    /* The Close Button */
+  .close {
+    border-radius: 50%;
+    background: $main-color;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    &:hover,
+      :focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+  &__element {
+    margin: auto;
+    background: $grey-color;
+  }
+}
