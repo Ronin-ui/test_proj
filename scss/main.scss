@@ -90,30 +90,114 @@ details summary::-webkit-details-marker {
     content: " ";
   }
 
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 445px;
+  height: 42px;
+  margin-right: 300px;
+  &:hover {
+    .input {
+    opacity: .6;
+    }
+  }
+  &:active {
+    border-bottom: 2px solid #282828;
+    .button {
+      outline: none;
+      visibility: visible;
+    }
+  }
+  &:focus {
+    border-bottom: 2px solid #282828;
+    .button {
+      outline: none;
+      visibility: visible;
+    }
+  }
+}
+.input {
+  height: 42px;
+  padding: 0 42px 0 25px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: .3;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:focus {
+    z-index: 1;
+    border-bottom: 2px solid #282828;
+    opacity: 1;
+  }
+
+  &::placeholder {
+    font: 15px/36px $font_opensans-light;
+  }
+}
+.button {
+  background: #f7e296;
+  border: 2px solid #282828;
+  margin-left: 350px;
+  height: 46px;
+  width: 82px;
+  color: #282828;
+  visibility: hidden;
+  font-size: 10pt;
+
+  transition: all .55s ease;
+}
+.button:hover{
+  background: #282828;
+  color: white;
+}
+
+
 .header {
   max-width: 1040px;
   margin: 40px auto 0 auto;
   padding: 50px 60px 100px 60px;
   color: $image-color;
   background: $main-color;
+  .form_search {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 42px;
+    .header__search {
+      border: none;
+      outline: none;
+      background: none;
+      opacity: .3;
+      font: 15px/36px $font_opensans-light;
+      &:hover {
+        opacity: .6;
+      }
+      &:focus {
+        opacity: 1;
+        border-bottom: 2px solid #282828;
 
-  .header__submit {
-    vertical-align: -2px;
-    background: none;
-    border: none;
-  }
-  .header__search {
-    opacity: .3;
-    font: 15px/36px $font_opensans-light;
-    background: none;
-    border: none;
-    &:hover {
-      opacity: .6;
-    }
-    &:focus {
-      opacity: 1;
+      }
     }
   }
+  .button_search {
+    background: #282828;
+    color: white;
+    border: 2px solid #282828;
+    vertical-align: middle;
+  }
+
+
+
   .header__select {
     background: none;
     border: none;

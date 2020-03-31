@@ -79,6 +79,74 @@ details[open] summary:before {
   content: " ";
 }
 
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 445px;
+  height: 42px;
+  margin-right: 300px;
+}
+.form:hover .input {
+  opacity: 0.6;
+}
+.form:active {
+  border-bottom: 2px solid #282828;
+}
+.form:active .button {
+  outline: none;
+  visibility: visible;
+}
+.form:focus {
+  border-bottom: 2px solid #282828;
+}
+.form:focus .button {
+  outline: none;
+  visibility: visible;
+}
+
+.input {
+  height: 42px;
+  padding: 0 42px 0 25px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.3;
+}
+.input:hover {
+  opacity: 0.6;
+}
+.input:focus {
+  z-index: 1;
+  border-bottom: 2px solid #282828;
+  opacity: 1;
+}
+.input::placeholder {
+  font: 15px/36px opensanslight, Arial, sans-serif;
+}
+
+.button {
+  background: #f7e296;
+  border: 2px solid #282828;
+  margin-left: 350px;
+  height: 46px;
+  width: 82px;
+  color: #282828;
+  visibility: hidden;
+  font-size: 10pt;
+  transition: all 0.55s ease;
+}
+
+.button:hover {
+  background: #282828;
+  color: white;
+}
+
 .header {
   max-width: 1040px;
   margin: 40px auto 0 auto;
@@ -86,22 +154,31 @@ details[open] summary:before {
   color: #282828;
   background: #f7e296;
 }
-.header .header__submit {
-  vertical-align: -2px;
-  background: none;
-  border: none;
+.header .form_search {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 42px;
 }
-.header .header__search {
+.header .form_search .header__search {
+  border: none;
+  outline: none;
+  background: none;
   opacity: 0.3;
   font: 15px/36px opensanslight, Arial, sans-serif;
-  background: none;
-  border: none;
 }
-.header .header__search:hover {
+.header .form_search .header__search:hover {
   opacity: 0.6;
 }
-.header .header__search:focus {
+.header .form_search .header__search:focus {
   opacity: 1;
+  border-bottom: 2px solid #282828;
+}
+.header .button_search {
+  background: #282828;
+  color: white;
+  border: 2px solid #282828;
+  vertical-align: middle;
 }
 .header .header__select {
   background: none;
